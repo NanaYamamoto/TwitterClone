@@ -163,17 +163,19 @@ function convertToDayTimeAgo(string $datatime){
                             </a>
                         </div>
                         <p><?php echo htmlspecialchars($view_tweet['tweet_body']);?></p>
-                        <?php if(isset($view_tweets['tweet_image'])):?>
+                        <?php if(isset($view_tweet['tweet_image'])):?>
                             <img src="<?php echo buildImagePath($view_tweet['tweet_image'],'tweet');?>" alt="" class="post-image">
                         <?php endif;?>
                         <div class="icon-list">
                             <div class="like">
                                 <?php 
-                                    if(isset($view_tweets['like_id'])){
+                                    if(isset($view_tweet['like_id'])){
                                         //いいね！がある場合ブルーのハートにする
-                                        echo '<img src="HOME_URL"."/Views/img/logo-twitterblue.svg" alt="">';
+                                        echo '<img src="'.HOME_URL.'Views/img/icon-heart-twitterblue.svg" alt="">';
+                                        
                                     }else{
-                                        echo '<img src="<?php echo HOME_URL; ?>/Views/img/icon-heart.svg" alt="">';
+                                        echo '<img src="'.HOME_URL.'Views/img/icon-heart.svg" alt="">';
+    
                                     }
                                 ?>
                                 
