@@ -1,8 +1,8 @@
 /*******************************
             全体
 *******************************/
-html{
-    height:100%;
+html {
+    height: 100%;
 }
 
 .container {
@@ -50,12 +50,13 @@ html{
     color: #fff;
 }
 
-.btn-reverse{
-    background-color:white;
-    color:#1af;
+.btn-reverse {
+    background-color: white;
+    color: #1af;
     border: 1px solid #1af;
 }
-.btn-reverse:hover{
+
+.btn-reverse:hover {
     color: #1af;
 }
 
@@ -65,9 +66,9 @@ a {
     text-decoration: none;
 }
 
-/*
-サイド
-******/
+/******************************
+            サイド
+********************************/
 .side .side-inner {
     top: 0px;
     margin-top: 20px;
@@ -120,7 +121,7 @@ a {
     }
 }
 
-    /*
+/*
 メイン
 *****/
 .main .main-header {
@@ -135,9 +136,9 @@ a {
     font-weight: bold;
 }
 
-    /*
-ホーム
-*****/
+/*******************************
+            ホーム
+********************************/
 .home .tweet-post {
     display: flex;
     padding: 10px;
@@ -258,11 +259,12 @@ a {
     color: #444;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .home .tweet-list .tweet .user {
         width:60%;
         padding: 5px 10px 10px 5px;
     }
+
     .bottom-area .btn {
         margin-top: 10px;
     }
@@ -280,28 +282,32 @@ body.signup {
     background-color: #123;
     color: white;
 }
-main.form-signup{
+
+main.form-signup {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: auto;
 }
-.form-signup .logo-white{
+
+.form-signup .logo-white {
     padding-bottom: 30px;
     width: 50px;
 }
 
-.form-signup h1{
+.form-signup h1 {
     font-size: 20px;
     margin-bottom: 20px;
 }
-.form-signup input{
+
+.form-signup input {
     margin-bottom: 10px;
     background-color: #123;
     color: #fff;
     border-color: #456;
 }
-.form-signup input:focus{
+
+.form-signup input:focus {
     background-color: #123;
     color: #fff;
     border-color: #1af;
@@ -310,44 +316,94 @@ main.form-signup{
 /********************************
        プロフイール画面
 *********************************/
-.profile .profile-area{
+.profile .profile-area {
     padding: 25px;
 }
-.profile .profile-area .top{
+
+.profile .profile-area .top {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.profile .profile-area .top .user{
+
+.profile .profile-area .top .user {
     width: 30%;
     padding: 5px 15px 10px 0;
 }
-.profile .profile-area .top .user img{
+
+.profile .profile-area .top .user img {
     width: 100%;
     border-radius: 50%;
     border: 3px solid rgb;
     border: 3px solid rgb(235,238, 240);
 }
-.profile .profile-area .top button{
+
+.profile .profile-area .top button {
     margin-bottom: 20px;
 }
-.profile .profile-area .name{
+
+.profile .profile-area .name {
     font-weight: bold;
     text-align: left;
 }
-.profile .profile-area .follow-follower{
+
+.profile .profile-area .follow-follower {
     display: flex;
     padding: 15px 0 10px 0;
 }
-.profile .profile-area .follow-follower .follow-count{
+
+.profile .profile-area .follow-follower .follow-count {
     width: 30px;
     font-weight: bold;
     font-size: 16px;
 }
-.profile .profile-area .follow-follower .follow-text{
+
+.profile .profile-area .follow-follower .follow-text {
     width: 100px;
     font-size: 16px;
     margin-right: 30px;
     color: #778;
 }
+
+/********************************
+       プロフイール画面
+*********************************/
+.search .search-area {
+    margin: 15px;
+    display: flex;
+    /* width: 70%; */
+    /* max-width: 300px; */
+}
+
+.search .search-area input {
+    width: 70%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+/*****************************
+        検索画面
+******************************/
+.notification .notification-list .notification-item{
+    padding: 10px;
+    border-bottom: 1px solid rgb(235,238, 240);
+}
+.notification .notification-list .notification-item .user{
+    width: 70px;
+    padding: 5px 15px 10px 10px;
+}
+.notification .notification-list .notification-item .user img{
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(235,238,240);
+}
+.notification .notification-list .notification-item .content{
+    width: 100%;
+}
+.notification .notification-list .notification-item .content p{
+    font-size: 16px;
+    padding: 8px 0 0 0 ;
+    margin-bottom: 8px;
+}
+
 
