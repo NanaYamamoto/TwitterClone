@@ -1,9 +1,3 @@
-<?php
-//設定関連の読み込み
-include_once('../config.php');
-//便利な関数の読み込み
-include_once('../util.php');
-?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -18,7 +12,15 @@ include_once('../util.php');
         <form action="" method="POST">
                 <img src="<?php echo HOME_URL; ?>Views/img/logo-twitterblue.svg" class="logo-white">
                 <h1>Twitterクローンにログイン</h1>
-            
+
+        
+                <!--ログインに失敗した場合-->
+                <?php if (isset($view_try_login_result) && $view_try_login_result === false): ?>
+                <div class="alert alert-warning text-sm" role="alert">
+                    ログインに失敗しました。メールアドレス、パスワードが正しいかご確認してください。
+                </div>
+                <?php endif; ?>
+
                 <input type="text" class="form-control" name="mail" placeholder="メールアドレス" required autofocus>
             
                 <input type="text" class="form-control" name="password" placeholder="パスワード" required>
