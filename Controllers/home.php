@@ -7,6 +7,8 @@
 include_once('../config.php');
 //便利な関数を読み込み
 include_once('../util.php');
+//Modelの読み込み
+include_once('../Models/tweets.php');
 
 //ログインしているか
 $user = getUserSession();
@@ -20,6 +22,6 @@ if (!$user) {
 $view_user = $user;
 
 //ツイート一覧
-//TOTO: あとでDBから取得
+$view_tweets = findTweets($user);
 
 include_once ('../Views/home.php');
