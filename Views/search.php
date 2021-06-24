@@ -1,39 +1,3 @@
-<?php
-//設定関連の読み込み
-include_once('../config.php');
-//便利な関数の読み込み
-include_once('../util.php');
-
-/***************************************
-------ツイート一覧--------
-***************************************/
-$view_tweets = [
-    [
-        'user_id' => 1,
-        'user_name' => 'taro',
-        'user_nickname' => '太郎',
-        'user_image_name' => 'sample-person.jpg',
-        'tweet_body' => '今プログラミングをしています。',
-        'tweet_image'=>null,
-        'tweet_created_at' => '2021-03-15 14:00:00',
-        'like_id' => null,
-        'like_count' => 0,
-    ],
-    [
-        'user_id' => 2,
-        'user_name' => 'kalai',
-        'user_nickname' => 'Kalai ruban V',
-        'user_image_name' => 'icon-kalai.jpg',
-        'tweet_body' => 'spent night re-organizing my watch-collection(middle class ones)!',
-        'tweet_image'=>'kalai-uploaded.jpg',
-        'tweet_image'=>'kalai-uploaded.jpg',
-        'tweet_created_at' => '2021-03-13 14:00:00',
-        'like_id' => 1,
-        'like_count' => 1,
-    ]
-];
-?>
-?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -54,7 +18,7 @@ $view_tweets = [
 
             <form action="" method="get">
                 <div class="search-area">
-                    <input type="text" class="form-control" name="keyward" id="" placeholder="キーワード検索" required>
+                    <input type="text" class="form-control" name="keyword" id="" placeholder="キーワード検索" value="<?php echo htmlspecialchars($view_keyword)?>" required>
                     <button type="submit" class="btn">検索</button>
                 </div>
             </form>
